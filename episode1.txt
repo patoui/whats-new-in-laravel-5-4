@@ -1,0 +1,7 @@
+\App\Http\Middleware\TrimStrings::class,
+
+Removes whitespace ferom beginning and ending of string
+
+\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+
+Converts empty string values to null
