@@ -1,0 +1,20 @@
+Laravel Mix
+
+// Unminified assets
+npm run dev
+
+// Minified assets
+npm run production
+
+// Watches for changes then recompiles
+npm run watch
+
+// Used in blade templates to fetch versioned assets
+{{ mix('/css/app.css') }}
+{{ mix('/js/app.js') }}
+
+// Versioning assets
+
+mix.js('resources/assets/js/app.js', 'public/js')
+   .sass('resources/assets/sass/app.scss', 'public/css')
+   .version();
