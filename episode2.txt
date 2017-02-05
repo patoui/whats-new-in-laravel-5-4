@@ -1,0 +1,12 @@
+Higher Order Collection Messages
+
+i.e.
+
+$posts->each->archive();
+
+Where "archive" is on the model and looks something like this
+
+public function archive()
+{
+    $this->update(['active' => false]);
+}
